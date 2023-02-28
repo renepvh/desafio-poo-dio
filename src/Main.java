@@ -1,7 +1,9 @@
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
 import java.time.LocalDate;
+import java.util.ConcurrentModificationException;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,6 +20,8 @@ public class Main {
         curso2.setCargaHoraria(4);
 
         System.out.println(curso2);
+
+//        Conteudo conteudo = new Curso(); // exemplo de Polimorfismo
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("Mentoria de java");
